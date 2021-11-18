@@ -1,0 +1,24 @@
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\OFIT Service.exe
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\obj\Debug\netcoreapp3.1\OFIT Service.csprojAssemblyReference.cache
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\obj\Debug\netcoreapp3.1\staticwebassets\OFIT Service.StaticWebAssets.Manifest.cache
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\obj\Debug\netcoreapp3.1\staticwebassets\OFIT Service.StaticWebAssets.xml
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\obj\Debug\netcoreapp3.1\OFIT Service.AssemblyInfoInputs.cache
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\obj\Debug\netcoreapp3.1\OFIT Service.AssemblyInfo.cs
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\obj\Debug\netcoreapp3.1\OFIT Service.RazorTargetAssemblyInfo.cache
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\obj\Debug\netcoreapp3.1\OFIT Service.csproj.CopyComplete
