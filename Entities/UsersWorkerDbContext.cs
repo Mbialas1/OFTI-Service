@@ -26,7 +26,7 @@ namespace OFTI_Service.Entities
             modelBuilder.Entity<UsersWorker>()
                 .Property(u => u.LastName)
                 .IsRequired()
-                .HasMaxLength(25);
+                .HasMaxLength(50);
 
             modelBuilder.Entity<UsersWorker>()
                 .Property(u => u.LoginName)

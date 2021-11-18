@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OFTI_Service.Entities;
 
 namespace OFTI_Service.Migrations
 {
     [DbContext(typeof(UsersWorkerDbContext))]
-    partial class UsersWorkerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211118134138_zadchange")]
+    partial class zadchange
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
