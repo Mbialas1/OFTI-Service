@@ -8,10 +8,16 @@ namespace OFTI_Service.Entities
 {
     public class UsersWorkerDbContext : DbContext
     {
+        #region SQL
+        private readonly string connectionSQL =
+            "Server=(localdb)\\mssqllocaldb;Database=OFITDb;Trusted_Connection=True;";
+        #endregion
         public DbSet<UsersWorker> UsersWorkers { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder) 
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<UsersWorker>()
                 .Property(u => u.Name)
                 .IsRequired()
@@ -43,5 +49,9 @@ namespace OFTI_Service.Entities
 
         }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
+        {
+            dbContextOptionsBuilder.UseSqlServer(connectionSQL);
+        }
     }
 }
