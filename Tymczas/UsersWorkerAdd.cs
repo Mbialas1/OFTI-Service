@@ -14,14 +14,14 @@ namespace OFTI_Service.Tymczas
         {
             _dbcontext = usersWorkerDbContext;
         }
-        
+
         public void Seed()
         {
             if (_dbcontext.Database.CanConnect())
             {
-                    var workers = GetWorkers();
-                    _dbcontext.UsersWorkers.AddRange(workers);
-                    _dbcontext.SaveChanges();
+                var workers = GetWorkers();
+                _dbcontext.UsersWorkers.AddRange(workers);
+                _dbcontext.SaveChanges();
             }
         }
 
@@ -37,7 +37,17 @@ namespace OFTI_Service.Tymczas
                     Master = false,
                     Admin = true,
                     LastLogged = DateTime.Now,
-                    FirstLogged = DateTime.Now
+                    FirstLogged = DateTime.Now,
+                    workersAddresses = new List<WorkersAddress>()
+                    {
+                        new WorkersAddress()
+                        {
+                          City = "Poznań",
+                          Country = "PL",
+                          NumberHouse = "3",
+                          Street = "Dąbrowskiego"
+                         },
+                    }
                 }
             };
         }

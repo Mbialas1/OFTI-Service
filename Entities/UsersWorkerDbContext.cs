@@ -13,6 +13,7 @@ namespace OFTI_Service.Entities
             "Server=(localdb)\\mssqllocaldb;Database=OFITDb;Trusted_Connection=True;";
         #endregion
         public DbSet<UsersWorker> UsersWorkers { get; set; }
+        public DbSet<WorkersAddress> WorkersAddresses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) 
         {
@@ -46,7 +47,6 @@ namespace OFTI_Service.Entities
             modelBuilder.Entity<UsersWorker>()
                 .Property(u => u.FirstLogged)
                 .IsRequired();
-
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)

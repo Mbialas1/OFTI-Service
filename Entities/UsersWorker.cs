@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -15,5 +16,6 @@ namespace OFTI_Service.Entities
         public bool Admin { get; set; }
         public DateTime LastLogged { get; set; }
         public DateTime FirstLogged { get; set; }
+        public List<WorkersAddress> workersAddresses { get; set; }
     }
 }

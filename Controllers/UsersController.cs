@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using OFTI_Service.Entities;
+using OFTI_Service.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,17 +14,51 @@ namespace OFTI_Service.Controllers
     public class UsersController : ControllerBase
     {
         private UsersWorkerDbContext _UsersWorkerDb;
-        public UsersController(UsersWorkerDbContext usersWorkerDbContext)
+        private IMapper _mapper;
+        public UsersController(UsersWorkerDbContext usersWorkerDbContext, IMapper mapper)
         {
             _UsersWorkerDb = usersWorkerDbContext;
+            _mapper = mapper;
         }
 
-        [Route("test")]
-        public ActionResult<IEnumerable<UsersWorker>> GetAll()
+        [HttpGet("test")]
+        public ActionResult<IEnumerable<UsersWorkerDto>> GetAll()
         {
-            var workers = _UsersWorkerDb.UsersWorkers.ToList();
+            //if (!_UsersWorkerDb.UsersWorkers.Any())
+            //{
+                var workers = _UsersWorkerDb
+                    .UsersWorkers 
+                    .Include(r => r.workersAddresses)
+                    .ToList();
 
-            return Ok(workers);
+            
+
+                return _mapper.Map<List<UsersWorkerDto>>(workers);
+            //}
+                
+            return null;
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<UsersWorkerDto> Get([FromRoute] int id)
+        {
+            if (!_UsersWorkerDb.UsersWorkers.Any())
+            {
+                var workers = _UsersWorkerDb
+                .UsersWorkers
+                .Include(r => r.workersAddresses)
+                .FirstOrDefault(u => u.Id == id);
+
+
+                if (workers is null)
+                {
+                    return NotFound();
+                }
+
+                return _mapper.Map<UsersWorkerDto>(workers);
+            }
+
+            return null;
         }
     }
 }

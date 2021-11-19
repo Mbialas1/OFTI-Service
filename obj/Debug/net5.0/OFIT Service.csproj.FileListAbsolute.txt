@@ -52,3 +52,5 @@ C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\obj\Debug\net5.0\OFIT Se
 C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\obj\Debug\net5.0\OFIT Service.genruntimeconfig.cache
 C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\net5.0\Humanizer.dll
 C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
