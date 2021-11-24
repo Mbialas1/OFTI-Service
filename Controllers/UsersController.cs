@@ -13,8 +13,8 @@ namespace OFTI_Service.Controllers
     [Route("api/workers")]
     public class UsersController : ControllerBase
     {
-        private UsersWorkerDbContext _UsersWorkerDb;
-        private IMapper _mapper;
+        private readonly UsersWorkerDbContext _UsersWorkerDb;
+        private readonly IMapper _mapper;
         public UsersController(UsersWorkerDbContext usersWorkerDbContext, IMapper mapper)
         {
             _UsersWorkerDb = usersWorkerDbContext;
@@ -35,8 +35,18 @@ namespace OFTI_Service.Controllers
 
                 return _mapper.Map<List<UsersWorkerDto>>(workers);
             //}
-                
+
             return null;
+        }
+
+        [HttpPost("testPost")]
+        public ActionResult CreateUsersWorkers([FromBody] CreateUsersWorkersDto createUsersWorkersDto)
+        {
+            var usersWorker = _mapper.Map<UsersWorker>(createUsersWorkersDto);
+            _UsersWorkerDb.UsersWorkers.Add(usersWorker);
+            _UsersWorkerDb.SaveChanges();
+
+            return Created($"/api/workers/{usersWorker.Id}", null);
         }
 
         [HttpGet("{id}")]

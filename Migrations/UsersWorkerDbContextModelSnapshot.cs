@@ -53,7 +53,12 @@ namespace OFTI_Service.Migrations
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
 
+                    b.Property<int>("WorkersAddressId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("WorkersAddressId");
 
                     b.ToTable("UsersWorkers");
                 });
@@ -77,25 +82,19 @@ namespace OFTI_Service.Migrations
                     b.Property<string>("Street")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("UsersWorkerId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("UsersWorkerId");
 
                     b.ToTable("WorkersAddresses");
                 });
 
-            modelBuilder.Entity("OFTI_Service.Entities.WorkersAddress", b =>
-                {
-                    b.HasOne("OFTI_Service.Entities.UsersWorker", null)
-                        .WithMany("workersAddresses")
-                        .HasForeignKey("UsersWorkerId");
-                });
-
             modelBuilder.Entity("OFTI_Service.Entities.UsersWorker", b =>
                 {
+                    b.HasOne("OFTI_Service.Entities.WorkersAddress", "workersAddresses")
+                        .WithMany()
+                        .HasForeignKey("WorkersAddressId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("workersAddresses");
                 });
 #pragma warning restore 612, 618

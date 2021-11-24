@@ -14,6 +14,15 @@ namespace OFTI_Service.Models
             CreateMap<UsersWorker, UsersWorkerDto>();
 
             CreateMap<WorkersAddress, WorkersAddresDto>();
+
+            CreateMap<CreateUsersWorkersDto, UsersWorker>()
+                .ForMember(r => r.workersAddresses, c => c.MapFrom(dto => new WorkersAddress() 
+                { 
+                    City = dto.City,
+                    Country = dto.Country,
+                    NumberHouse = dto.NumberHouse,
+                    Street = dto.Street
+                }));
         }
     }
 }

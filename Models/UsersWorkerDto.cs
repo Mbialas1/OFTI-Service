@@ -10,6 +10,6 @@ namespace OFTI_Service.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public DateTime FirstLogged { get; set; }
-        public List<WorkersAddresDto> workersAddresses { get; set; }
+        public WorkersAddresDto workersAddresses { get; set; }
     }
 }

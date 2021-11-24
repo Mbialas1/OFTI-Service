@@ -10,8 +10,8 @@ using OFTI_Service.Entities;
 namespace OFTI_Service.Migrations
 {
     [DbContext(typeof(UsersWorkerDbContext))]
-    [Migration("20211118122128_initial")]
-    partial class initial
+    [Migration("20211124124134_Test")]
+    partial class Test
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -39,8 +39,8 @@ namespace OFTI_Service.Migrations
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("LoginName")
                         .IsRequired()
@@ -55,9 +55,49 @@ namespace OFTI_Service.Migrations
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
 
+                    b.Property<int>("WorkersAddressId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("WorkersAddressId");
+
                     b.ToTable("UsersWorkers");
+                });
+
+            modelBuilder.Entity("OFTI_Service.Entities.WorkersAddress", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NumberHouse")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Street")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("WorkersAddresses");
+                });
+
+            modelBuilder.Entity("OFTI_Service.Entities.UsersWorker", b =>
+                {
+                    b.HasOne("OFTI_Service.Entities.WorkersAddress", "workersAddresses")
+                        .WithMany()
+                        .HasForeignKey("WorkersAddressId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("workersAddresses");
                 });
 #pragma warning restore 612, 618
         }

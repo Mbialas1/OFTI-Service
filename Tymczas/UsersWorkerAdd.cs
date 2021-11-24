@@ -38,15 +38,12 @@ namespace OFTI_Service.Tymczas
                     Admin = true,
                     LastLogged = DateTime.Now,
                     FirstLogged = DateTime.Now,
-                    workersAddresses = new List<WorkersAddress>()
+                    workersAddresses = new WorkersAddress()
                     {
-                        new WorkersAddress()
-                        {
                           City = "Poznań",
                           Country = "PL",
                           NumberHouse = "3",
                           Street = "Dąbrowskiego"
-                         },
                     }
                 }
             };
