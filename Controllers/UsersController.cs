@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OFTI_Service.Entities;
 using OFTI_Service.Models;
+using OFTI_Service.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,62 +14,55 @@ namespace OFTI_Service.Controllers
     [Route("api/workers")]
     public class UsersController : ControllerBase
     {
-        private readonly UsersWorkerDbContext _UsersWorkerDb;
-        private readonly IMapper _mapper;
-        public UsersController(UsersWorkerDbContext usersWorkerDbContext, IMapper mapper)
+        private readonly IUsersWorkersService _workersService;
+
+        public UsersController(IUsersWorkersService workersService)
         {
-            _UsersWorkerDb = usersWorkerDbContext;
-            _mapper = mapper;
+            _workersService = workersService;
+        }
+
+        [HttpPut("{id}")]
+        public ActionResult Update([FromBody] UpdateUsersWorkers updateUsers, [FromRoute]int id)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var isUpdate = _workersService.Update(id, updateUsers);
+            return isUpdate ? Ok() : NotFound();
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult Delete([FromRoute] int id)
+        {
+            var isDeleted = _workersService.Delete(id);
+
+            return isDeleted ? NoContent() : NotFound();
         }
 
         [HttpGet("test")]
         public ActionResult<IEnumerable<UsersWorkerDto>> GetAll()
         {
-            //if (!_UsersWorkerDb.UsersWorkers.Any())
-            //{
-                var workers = _UsersWorkerDb
-                    .UsersWorkers 
-                    .Include(r => r.workersAddresses)
-                    .ToList();
-
-            
-
-                return _mapper.Map<List<UsersWorkerDto>>(workers);
-            //}
-
-            return null;
+            var workers = _workersService.GetAll();
+            return workers.ToList();
         }
 
         [HttpPost("testPost")]
         public ActionResult CreateUsersWorkers([FromBody] CreateUsersWorkersDto createUsersWorkersDto)
         {
-            var usersWorker = _mapper.Map<UsersWorker>(createUsersWorkersDto);
-            _UsersWorkerDb.UsersWorkers.Add(usersWorker);
-            _UsersWorkerDb.SaveChanges();
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            return Created($"/api/workers/{usersWorker.Id}", null);
+            var id = _workersService.Create(createUsersWorkersDto);
+
+            return Created($"/api/workers/{id}", null);
         }
 
         [HttpGet("{id}")]
         public ActionResult<UsersWorkerDto> Get([FromRoute] int id)
         {
-            if (!_UsersWorkerDb.UsersWorkers.Any())
-            {
-                var workers = _UsersWorkerDb
-                .UsersWorkers
-                .Include(r => r.workersAddresses)
-                .FirstOrDefault(u => u.Id == id);
+            var workers = _workersService.GetById(id);
 
-
-                if (workers is null)
-                {
-                    return NotFound();
-                }
-
-                return _mapper.Map<UsersWorkerDto>(workers);
-            }
-
-            return null;
+            return workers is not null ? Ok(workers) : NotFound();
         }
     }
 }

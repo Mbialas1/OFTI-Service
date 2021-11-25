@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using OFTI_Service.Entities;
+using OFTI_Service.Services;
 using OFTI_Service.Tymczas;
 
 namespace OFTI_Service
@@ -31,6 +32,7 @@ namespace OFTI_Service
             services.AddDbContext<UsersWorkerDbContext>();
             services.AddScoped<UsersWorkerAdd>();
             services.AddAutoMapper(this.GetType().Assembly);
+            services.AddScoped<IUsersWorkersService, UsersWorkersService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

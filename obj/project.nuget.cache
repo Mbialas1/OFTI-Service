@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bY2POS/ZV4QYkxVkmpFMQoqAYrY4+RAWneh81sbPElXq7lbFcdwIKqdAJdMM9zv/ZBG8oF/YGMhMVRS4pUFneA==",
+  "dgSpecHash": "hlzzUPfI6RvRhnbX2HQXJ+nXCvW998BEAi8Jq6FzUUyJLFv2lNJBYwR6/8VLY+17OobseDfFxMWNt4o0T+89dQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Mateusz\\source\\repos\\OFTI Service\\OFTI Service\\OFIT Service.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,9 @@
     "C:\\Users\\Mateusz\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Mateusz\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Mateusz\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\Mateusz\\.nuget\\packages\\nlog\\4.7.6\\nlog.4.7.6.nupkg.sha512",
+    "C:\\Users\\Mateusz\\.nuget\\packages\\nlog.extensions.logging\\1.7.0\\nlog.extensions.logging.1.7.0.nupkg.sha512",
+    "C:\\Users\\Mateusz\\.nuget\\packages\\nlog.web.aspnetcore\\4.10.0\\nlog.web.aspnetcore.4.10.0.nupkg.sha512",
     "C:\\Users\\Mateusz\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Mateusz\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Mateusz\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
