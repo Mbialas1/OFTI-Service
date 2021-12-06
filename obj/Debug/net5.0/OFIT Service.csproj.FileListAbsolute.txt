@@ -58,3 +58,63 @@ C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\net5.0\NLog.co
 C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\net5.0\NLog.dll
 C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\net5.0\NLog.Extensions.Logging.dll
 C:\Users\Mateusz\source\repos\OFTI Service\OFTI Service\bin\Debug\net5.0\NLog.Web.AspNetCore.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\NLog.config
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\appsettings.Development.json
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\appsettings.json
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\OFIT Service.exe
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\OFIT Service.deps.json
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\OFIT Service.runtimeconfig.json
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\OFIT Service.runtimeconfig.dev.json
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\OFIT Service.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\ref\OFIT Service.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\OFIT Service.pdb
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\AutoMapper.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Humanizer.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\Newtonsoft.Json.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\NLog.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\NLog.Web.AspNetCore.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\System.Runtime.Caching.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+G:\Projekt życia\OFTI-Service\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\OFIT Service.csproj.AssemblyReference.cache
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\OFIT Service.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\OFIT Service.AssemblyInfoInputs.cache
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\OFIT Service.AssemblyInfo.cs
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\OFIT Service.csproj.CoreCompileInputs.cache
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\OFIT Service.MvcApplicationPartsAssemblyInfo.cache
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\staticwebassets\OFIT Service.StaticWebAssets.Manifest.cache
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\staticwebassets\OFIT Service.StaticWebAssets.xml
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\scopedcss\bundle\OFIT Service.styles.css
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\OFIT Service.RazorTargetAssemblyInfo.cache
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\OFIT Service.csproj.CopyComplete
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\OFIT Service.dll
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\ref\OFIT Service.dll
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\OFIT Service.pdb
+G:\Projekt życia\OFTI-Service\obj\Debug\net5.0\OFIT Service.genruntimeconfig.cache
