@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Projekt życia\\OFTI-Service\\OFIT Service.csproj": {}
+    "C:\\Users\\Mateusz\\source\\repos\\OFTI Service\\OFTI Service\\OFIT Service.csproj": {}
   },
   "projects": {
-    "G:\\Projekt życia\\OFTI-Service\\OFIT Service.csproj": {
+    "C:\\Users\\Mateusz\\source\\repos\\OFTI Service\\OFTI Service\\OFIT Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Projekt życia\\OFTI-Service\\OFIT Service.csproj",
+        "projectUniqueName": "C:\\Users\\Mateusz\\source\\repos\\OFTI Service\\OFTI Service\\OFIT Service.csproj",
         "projectName": "OFIT Service",
-        "projectPath": "G:\\Projekt życia\\OFTI-Service\\OFIT Service.csproj",
+        "projectPath": "C:\\Users\\Mateusz\\source\\repos\\OFTI Service\\OFTI Service\\OFIT Service.csproj",
         "packagesPath": "C:\\Users\\Mateusz\\.nuget\\packages\\",
-        "outputPath": "G:\\Projekt życia\\OFTI-Service\\obj\\",
+        "outputPath": "C:\\Users\\Mateusz\\source\\repos\\OFTI Service\\OFTI Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Mateusz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

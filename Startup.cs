@@ -34,6 +34,7 @@ namespace OFTI_Service
             services.AddScoped<UsersWorkerAdd>();
             services.AddAutoMapper(this.GetType().Assembly);
             services.AddScoped<IUsersWorkersService, UsersWorkersService>();
+            services.AddScoped<IAccountService, AccountService>();
             services.AddScoped<ErrorHandlingMiddleware>();
         }
 
